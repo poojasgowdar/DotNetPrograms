@@ -1,0 +1,7 @@
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\obj\Debug\Transpose_Matrix.csproj.AssemblyReference.cache
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\obj\Debug\Transpose_Matrix.csproj.CoreCompileInputs.cache
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\bin\Debug\Transpose_Matrix.exe.config
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\bin\Debug\Transpose_Matrix.exe
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\bin\Debug\Transpose_Matrix.pdb
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\obj\Debug\Transpose_Matrix.exe
+C:\Users\Pooja S\source\repos\Test_Programs\Transpose_Matrix\obj\Debug\Transpose_Matrix.pdb
