@@ -6,7 +6,8 @@ namespace Transpose_Matrix
     {
         static void Main(string[] args)
         {
-            int rows, cols;
+            int rows;
+            int cols;
             Console.WriteLine("Enter the Number of Rows:");
             rows = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Number of Cols:");
