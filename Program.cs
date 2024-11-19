@@ -1,64 +1,40 @@
 ﻿using System;
-using System.Data;
-namespace Transpose_Matrix
+
+namespace Binary_Search
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int rows;
-            int cols;
-            Console.WriteLine("Enter the Number of Rows:");
-            rows = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the Number of Cols:");
-            cols = int.Parse(Console.ReadLine());
-            int[,] matrix = new int[rows, cols];
+            int[] arr = { 10, 20, 30, 40, 50, 60, 70 };
+            Console.WriteLine("Enter the Element to be searched");
+            int key = int.Parse(Console.ReadLine());
+            int low = 0, high = arr.Length - 1;
+            bool found = false;
 
-            //Input the Elements into the Matrix
-            Console.WriteLine("Enter the elements of the matrix:");
-            for (int i = 0; i < rows; i++)
+            while (low <= high)
             {
-                for (int j = 0; j < cols; j++)
+                int mid = (low + high) / 2;
+                if (arr[mid] == key)
                 {
-                    Console.WriteLine($"Element [{i}{j}]:");
-                    matrix[i, j] = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Element found at the index " + mid);
+                    found = true;
+                    break;
                 }
-
-            }
-
-            //Transpose of Matrix
-            int[,] transpose = new int[rows, cols];
-            for(int i = 0; i < rows; i++)
-            {
-                for(int j = 0; j < cols; j++)
+                else if (arr[mid] < key)
                 {
-                    transpose[j, i] = matrix[i, j];
+                    low = mid + 1;
+                }
+                else
+                {
+                    high = mid - 1;
                 }
             }
-            //Print the Matrix
-            Console.WriteLine("The Original Matrix is:");
-            for (int i = 0; i < rows; i++)
+            if (!found)
             {
-                for (int j = 0; j < cols; j++)
-                {
-                    Console.WriteLine($"{matrix[i, j]}");
-                }
-                Console.WriteLine();
-            }
-
-            //Print the transposed Matrix
-            Console.WriteLine("\n Transpose Matrix:");
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < cols; j++)
-                {
-                    Console.WriteLine($"{transpose[i, j]}");
-                }
-                Console.WriteLine();
+                Console.WriteLine("Element not found");
             }
             Console.ReadKey();
-
-                  
         }
     }
 }
